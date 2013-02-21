@@ -1,0 +1,10 @@
+git_update_script
+=================
+
+Simple script to update a series of Git repository subdirectories in a single directory
+
+Put it in a directory that contains a bunch of subdirectories that are cloned from Git repositories, then run it
+
+It'll look through them all, figure out if they contains a .git folder, and if one does, it runs 'git pull origin' on it.
+
+Originally made for an Islandora Drupal site that has dozens of modules, each of them pulled from Git
